@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+		"icons": {
+			"128": "icon.png"
+		},
+  "name": "JDBC Admin Auto Login",
+  "version": "1.0.0",
+  "description": "Auto Login",
+  "content_scripts": [
+    {
+      "matches": ["*://localhost/*","*://localhost/*"],
+      "js": ["login.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
+
